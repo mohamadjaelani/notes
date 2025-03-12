@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+    environment{
+        registry="private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id";
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scmGit(branches: [[name: '*/develop']], extensions: [], userRemoteConfigs: [[credentialsId: 'crl-gitlab-credential', url: 'git@git.allianz.co.id:14031-credit-life/crl-ellise-letter-service.git']])
+            }
+        }
+    	stage('Maven Build') {
+    		steps {
+    			withEnv(["JAVA_HOME=/opt/jdk-11.0.3+7", "PATH+MAVEN=${tool 'maven'}/bin:${env.JAVA_HOME}/bin"]) {
+    				sh "mvn clean install"
+    			}
+    		}
+    	}
+    	stage('Docker Image Build') {
+    		steps {
+    			sh "docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-letter-service-prod-aws:1.0.0.RELEASE . -f Dockerfile-prod" // DOCKER_CERT_PATH is automatically picked up by the Docker client
+    			sh "docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/crl-ellise-letter-service-prod-aws:1.0.0.RELEASE"
+    		}
+    	}
+    }
+}
