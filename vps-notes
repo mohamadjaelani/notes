@@ -1,0 +1,3 @@
+ip: 103.103.21.66
+scp *.* famathain@103.103.21.66:/Faizul_Klasifikasi_Rempah_8020
+scp -r Faizul_Klasifikasi_Rempah_8020/ famathain@103.103.21.66:/home/famathain
