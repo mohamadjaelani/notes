@@ -32,3 +32,13 @@ systemctl list-units --type=service
 ```
 systemctl list-units --type=service --all
 ```
+
+###Listing only running services:
+```
+systemctl list-units --type=service --state=running
+```
+
+###Listing all enabled services
+```
+systemctl list-unit-files --type=service --state=enabled
+```
