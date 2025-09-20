@@ -1,24 +1,24 @@
-###To check the status from the command line:
+### To check the status from the command line:
 ```
 sudo systemctl status gdm
 ```
 
-To stop:
+### To stop:
 ```
 sudo systemctl stop gdm
 ```
 
-To start:
+### To start:
 ```
 sudo systemctl start gdm
 ```
 
-To disable (prevent loading at system startup):
+### To disable (prevent loading at system startup):
 ```
 sudo systemctl disable gdm
 ```
 
-To enable (loading at system startup):
+### To enable (loading at system startup):
 ```
 sudo systemctl enable gdm
 ```
@@ -28,17 +28,17 @@ sudo systemctl enable gdm
 systemctl list-units --type=service
 ```
 
-###Listing all services (including inactive and failed):
+### Listing all services (including inactive and failed):
 ```
 systemctl list-units --type=service --all
 ```
 
-###Listing only running services:
+### Listing only running services:
 ```
 systemctl list-units --type=service --state=running
 ```
 
-###Listing all enabled services
+### Listing all enabled services
 ```
 systemctl list-unit-files --type=service --state=enabled
 ```
