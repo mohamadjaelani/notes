@@ -7,3 +7,8 @@ ssh famathain@103.103.21.66 password: asdf0987
 ```
 https://portal.biznetgio.com/user/login
 ```
+### login portal
+```
+user: email
+password: 29011325@Asdf0987
+```
