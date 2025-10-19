@@ -19,3 +19,4 @@
 - Reload Nginx configurations (without stopping): ```sudo systemctl reload nginx```
 - Enable Nginx to start automatically on boot: ```sudo systemctl enable nginx```
 - Disable Nginx from starting automatically on boot: ```sudo systemctl disable nginx```
+- nginx default dir ```/etc/nginx/sites-available/```
