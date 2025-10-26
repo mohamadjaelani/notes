@@ -4,6 +4,7 @@
 ```scp *.* famathain@103.103.21.66:/Faizul_Klasifikasi_Rempah_8020```
 ### eg
 ```scp -r Faizul_Klasifikasi_Rempah_8020/ famathain@103.103.21.66:/home/famathain/Faizul_Klasifikasi_Rempah_8020```
+```scp *.* famathain@103.103.21.66:/home/famathain/nodeserver/public```
 ### remote access
 ```ssh famathain@103.103.21.66```
 ### password: 
