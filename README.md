@@ -7,3 +7,5 @@
     ```sudo apt-get purge icedtea-* openjdk-*```
   - Check that all OpenJDK packages have been removed.
     ```sudo dpkg --list | grep -i jdk```
+maxpribadi96@gmail.com
+M4x@pr184d1
