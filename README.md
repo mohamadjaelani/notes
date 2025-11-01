@@ -9,3 +9,5 @@
     ```sudo dpkg --list | grep -i jdk```
 maxpribadi96@gmail.com
 M4x@pr184d1
+a37449485@gmail.com
+A37449485@andreas
