@@ -48,10 +48,10 @@
         <mxCell id="R9UTY_A89e8fDkXTlKyh-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;" value="request validation" vertex="1">
           <mxGeometry height="30" width="140" x="240" y="140" as="geometry" />
         </mxCell>
-        <mxCell id="R9UTY_A89e8fDkXTlKyh-23" edge="1" parent="1" source="R9UTY_A89e8fDkXTlKyh-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="R9UTY_A89e8fDkXTlKyh-22">
+        <mxCell id="R9UTY_A89e8fDkXTlKyh-23" edge="1" parent="1" source="R9UTY_A89e8fDkXTlKyh-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="R9UTY_A89e8fDkXTlKyh-22">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="600" y="200" />
+              <mxPoint x="600" y="180" />
               <mxPoint x="600" y="300" />
             </Array>
           </mxGeometry>
@@ -69,8 +69,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="R9UTY_A89e8fDkXTlKyh-20" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="check token and otp session" vertex="1">
-          <mxGeometry height="160" width="135" x="447.5" y="120" as="geometry" />
+        <mxCell id="R9UTY_A89e8fDkXTlKyh-20" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="check otp session" vertex="1">
+          <mxGeometry height="120" width="92.5" x="476.25" y="120" as="geometry" />
         </mxCell>
         <mxCell id="R9UTY_A89e8fDkXTlKyh-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;" value="redirect to dashboard" vertex="1">
           <mxGeometry height="30" width="140" x="40" y="280" as="geometry" />
@@ -103,7 +103,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="R9UTY_A89e8fDkXTlKyh-25" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="is number exist?" vertex="1">
-          <mxGeometry height="120" width="112.5" x="458.75" y="340" as="geometry" />
+          <mxGeometry height="110" width="101.25" x="470" y="340" as="geometry" />
         </mxCell>
         <mxCell id="2xKm0sMSeF2skIimM4hB-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;" value="input number" vertex="1">
           <mxGeometry height="30" width="140" x="30" y="470" as="geometry" />
