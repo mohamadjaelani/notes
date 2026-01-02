@@ -132,5 +132,4 @@ kubectl scale deployment/crl-housekeeping-service-prod --replicas=1
 kubectl scale deployment/crl-kta-cover-service-prod --replicas=1
 kubectl scale deployment/crl-letter-service --replicas=1
 kubectl scale deployment/crl-micro-insurance-cover-service-prod --replicas=1
-![Uploading image.png…]()
 
