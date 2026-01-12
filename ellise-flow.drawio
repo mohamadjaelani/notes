@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
   <diagram name="Page-1" id="t-30YCatbnubZfMVEjDv">
     <mxGraphModel dx="786" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -791,6 +791,37 @@
         </mxCell>
         <mxCell id="3ADBT8P7ADpTjCPWkiKX-83" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
           <mxGeometry height="60" width="30" x="870" y="3970" as="geometry" />
+        </mxCell>
+        <mxCell id="fQiEHA7q6Bv2jcGLmvQV-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GIT (deployment script SIT/UAT/PROD)" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="4370" as="geometry" />
+        </mxCell>
+        <mxCell id="fQiEHA7q6Bv2jcGLmvQV-5" edge="1" parent="1" source="fQiEHA7q6Bv2jcGLmvQV-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="fQiEHA7q6Bv2jcGLmvQV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fQiEHA7q6Bv2jcGLmvQV-6" connectable="0" parent="fQiEHA7q6Bv2jcGLmvQV-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="commit" vertex="1">
+          <mxGeometry relative="1" x="-0.2686" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fQiEHA7q6Bv2jcGLmvQV-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="IDE (development tool)" vertex="1">
+          <mxGeometry height="60" width="120" x="110" y="4370" as="geometry" />
+        </mxCell>
+        <mxCell id="fQiEHA7q6Bv2jcGLmvQV-8" edge="1" parent="1" source="fQiEHA7q6Bv2jcGLmvQV-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="fQiEHA7q6Bv2jcGLmvQV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fQiEHA7q6Bv2jcGLmvQV-9" connectable="0" parent="fQiEHA7q6Bv2jcGLmvQV-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Synch" vertex="1">
+          <mxGeometry relative="1" x="0.148" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fQiEHA7q6Bv2jcGLmvQV-11" edge="1" parent="1" source="fQiEHA7q6Bv2jcGLmvQV-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="fQiEHA7q6Bv2jcGLmvQV-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fQiEHA7q6Bv2jcGLmvQV-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ArgoCD" vertex="1">
+          <mxGeometry height="60" width="120" x="520" y="4370" as="geometry" />
+        </mxCell>
+        <mxCell id="fQiEHA7q6Bv2jcGLmvQV-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="EKS" vertex="1">
+          <mxGeometry height="60" width="120" x="520" y="4510" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
