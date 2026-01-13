@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="5yglxlPGfIDwroe8bGDG-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="Frontend" vertex="1">
-          <mxGeometry height="1210" width="230" x="20" y="50" as="geometry" />
+          <mxGeometry height="1470" width="230" x="20" y="50" as="geometry" />
         </mxCell>
         <mxCell id="5yglxlPGfIDwroe8bGDG-4" edge="1" parent="1" source="5yglxlPGfIDwroe8bGDG-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="5yglxlPGfIDwroe8bGDG-3" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -229,7 +229,7 @@
           <mxGeometry height="90" width="400" x="710" y="1480" as="geometry" />
         </mxCell>
         <mxCell id="5yglxlPGfIDwroe8bGDG-72" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Type Of Submission in Credit life" vertex="1">
-          <mxGeometry height="30" width="250" x="350" y="1630" as="geometry" />
+          <mxGeometry height="30" width="250" x="380" y="1670" as="geometry" />
         </mxCell>
         <mxCell id="5yglxlPGfIDwroe8bGDG-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Ellise" vertex="1">
           <mxGeometry height="60" width="120" x="80" y="1680" as="geometry" />
@@ -831,6 +831,38 @@
         </mxCell>
         <mxCell id="1yV307e_2UhaafmgIt8w-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;" value="Member status&lt;div&gt;1. APPROVED&lt;/div&gt;&lt;div&gt;2. REJECTED&lt;/div&gt;&lt;div&gt;3. SUBMITTED/REFERUW&lt;/div&gt;&lt;div&gt;4. ACTIVE&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="180" x="680" y="4900" as="geometry" />
+        </mxCell>
+        <mxCell id="1yV307e_2UhaafmgIt8w-8" edge="1" parent="1" source="1yV307e_2UhaafmgIt8w-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="1yV307e_2UhaafmgIt8w-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1yV307e_2UhaafmgIt8w-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="upload document" vertex="1">
+          <mxGeometry height="60" width="160" x="40" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="1yV307e_2UhaafmgIt8w-5" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="token validation" vertex="1">
+          <mxGeometry x="480.8823529411766" y="1209" as="geometry" />
+        </mxCell>
+        <mxCell id="1yV307e_2UhaafmgIt8w-9" edge="1" parent="1" source="1yV307e_2UhaafmgIt8w-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="1210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1yV307e_2UhaafmgIt8w-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="crl-elllise-gateway-service" vertex="1">
+          <mxGeometry height="50" width="180" x="255" y="1185" as="geometry" />
+        </mxCell>
+        <mxCell id="1yV307e_2UhaafmgIt8w-11" edge="1" parent="1" source="1yV307e_2UhaafmgIt8w-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1yV307e_2UhaafmgIt8w-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1yV307e_2UhaafmgIt8w-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="crl-elllise-user-product-service" vertex="1">
+          <mxGeometry height="50" width="180" x="545" y="1185" as="geometry" />
+        </mxCell>
+        <mxCell id="1yV307e_2UhaafmgIt8w-13" edge="1" parent="1" source="1yV307e_2UhaafmgIt8w-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1yV307e_2UhaafmgIt8w-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1yV307e_2UhaafmgIt8w-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="crl-ellise-document-service" vertex="1">
+          <mxGeometry height="50" width="180" x="545" y="1315" as="geometry" />
+        </mxCell>
+        <mxCell id="1yV307e_2UhaafmgIt8w-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="IBM Filenet Management" vertex="1">
+          <mxGeometry height="50" width="180" x="545" y="1445" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
