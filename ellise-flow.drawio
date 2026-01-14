@@ -901,16 +901,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="RaPggB8k1UVAv376Ukoz-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="partner" vertex="1">
-          <mxGeometry height="40" width="120" x="250" y="2500" as="geometry" />
+          <mxGeometry height="40" width="120" x="247.5" y="2540" as="geometry" />
         </mxCell>
         <mxCell id="RaPggB8k1UVAv376Ukoz-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="crl-kta-cover-service" vertex="1">
-          <mxGeometry height="40" width="150" x="505" y="2500" as="geometry" />
+          <mxGeometry height="40" width="150" x="480.88" y="2540" as="geometry" />
         </mxCell>
         <mxCell id="RaPggB8k1UVAv376Ukoz-11" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="OPUS" vertex="1">
           <mxGeometry height="80" width="60" x="840" y="2390" as="geometry" />
         </mxCell>
         <mxCell id="RaPggB8k1UVAv376Ukoz-14" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="OPUS" vertex="1">
-          <mxGeometry height="80" width="60" x="855" y="2480" as="geometry" />
+          <mxGeometry height="80" width="60" x="920" y="2520" as="geometry" />
         </mxCell>
         <mxCell id="RaPggB8k1UVAv376Ukoz-15" edge="1" parent="1" source="RaPggB8k1UVAv376Ukoz-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="RaPggB8k1UVAv376Ukoz-14">
           <mxGeometry relative="1" as="geometry" />
