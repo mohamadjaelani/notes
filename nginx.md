@@ -43,3 +43,6 @@
   ```sudo nginx -t```
 - if ok then reaload/restart nginx service
   ```sudo systemctl reload nginx```
+
+## NGIN-X in windows
+start nginx
