@@ -12,4 +12,31 @@
      > br_netfilter
      > EOF
      ```
-     the file would be loaded automatically when system reboot.
+     the file would be loaded automatically when system reboot. to verify the file is created using command ```cat /etc/modules-load.d/containerd.conf```. to load the file manualy using command ```modprobe overlay``` then ```modprobe br_netfilter``` so no need to restart the system. then download containerd using command
+    ```
+    wget https://github.com/containerd/containerd/releases/download/v1.7.5/containerd-1.7.5-linux-amd64.tar.gz
+    ```
+    then extract ```tar.gz``` file using command
+    ```
+    tar Cxzvf /usr/local containerd-1.7.5-linux-amd64.tar.gz
+    ```
+    create new directory for containerd
+    ```
+    mkdir -p /etc/containerd
+    ```
+    generate configuration file in the containerd directory
+    ```
+    containerd config default > /etc/containerd/config.toml
+    ```
+    make sure that container is using ```systemd``` by checked ```systemd_cgroup``` value using command
+    ```
+    cat /etc/containerd/config.toml | grep system
+    ```
+    if its ```false``` that indicates the containerd does not using ```systemd```. change the value to ```true``` by edit the configuration file using command
+    ```
+    vi /etc/containerd/config.toml
+    ```
+    find text ```system``` by ```/system``` then change ```systemd_cgroup=true``` save it using ```:wq```
+
+    
+  8. 
