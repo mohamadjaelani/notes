@@ -53,4 +53,19 @@
      ```
      systemctl restart containerd
      ```
-  8. 
+     enabled the service so it will be running if the system reboot
+     ```
+     systemctl enable containerd
+     ```
+  8. set IP Forwarding by creating configuration file using this command
+     ```
+     tee /etc/sysctl.d/99-kubernetes-cri.conf << EOF
+     > net.bridge.bridge-nf-call-ip6tables=1
+     > net.bridge.bridge-nf-call-iptables=1
+     > net.ipv4.ip_forward=1
+     > EOF
+     ```
+     verify the file by this command ```cat /etc/sysctl.d/99-kubernetes-cri.conf```
+     then apply the ```sysctl``` file using command ```sysctl -p /etc/sysctl.d/99-kubernetes-cri.conf```
+  9. install ```runc```
+     
