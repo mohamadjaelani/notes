@@ -26,17 +26,17 @@
       ```
       generate configuration file in the containerd directory
       ```
-      containerd config default > /etc/containerd/config.toml
+      containerd config default | tee /etc/containerd/config.toml
       ```
-      make sure that container is using ```systemd``` by checked ```systemd_cgroup``` value using command
+      ~~make sure that container is using ```systemd``` by checking ```systemd_cgroup``` value using command~~
       ```
       cat /etc/containerd/config.toml | grep system
       ```
-      if its ```false``` that indicates the containerd does not using ```systemd```. change the value to ```true``` by edit the configuration file using command
+      ~~if its ```false``` that indicates the containerd does not using ```systemd```. change the value to ```true``` by edit the configuration file using command~~
       ```
       vi /etc/containerd/config.toml
       ```
-      find text ```system``` by ```/system``` then change ```systemd_cgroup=true``` save it using ```:wq```
+      ~~find text ```system``` by ```/system``` then change ```systemd_cgroup=true``` save it using ```:wq```~~
       finally install ```containerd.service``` by downloading the file using
       ```
       wget https://raw.githubusercontent.com/containerd/containerd/main/containerd.service
@@ -87,4 +87,12 @@
       ```
       install -m 755 crictl /usr/local/bin/crictl
       ```
-     
+      repointing crctl endpoint to containerd
+      ```
+      crictl config runtime-endpoint unix:///var/run/containerd/containerd.sock
+      ```
+      check the version
+      ```
+      crictl --runtime-endpoint=unix:///run/containerd/containerd.sock version
+      ```
+    ----- continue to page 26----
