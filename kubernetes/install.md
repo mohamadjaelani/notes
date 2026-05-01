@@ -1,5 +1,5 @@
 # the steps installing kubernetes in ubuntu
-## for master and 2 worker nodes (all command running in su)
+## for master and 2 worker nodes (all command running in su and using termius)
   1. get the lattest update ```apt-get update```
   2. install ```apt-transport-https```, but 1rstly check the latest version using this command ```apt-cache policy apt-transport-https``` then install using ```apt install -y apt-transport-https=2.0.11```.
   3. install ```ca-certificates```, but 1stly check the latest version or installed version using this command ```apt-cache policy ca-certificates``` mostly the certificate is installed but if the value of Installed and Candidate is different, the installed one is not the latest, then install using command ```apt install -y ca-certificates=20240203~20.04.1```.
@@ -37,6 +37,20 @@
       vi /etc/containerd/config.toml
       ```
       find text ```system``` by ```/system``` then change ```systemd_cgroup=true``` save it using ```:wq```
-
-    
+      finally install ```containerd.service``` by downloading the file using
+      ```
+      wget https://raw.githubusercontent.com/containerd/containerd/main/containerd.service
+      ```
+      then move the file to ```/etc/systemd/system/``` using this command
+     ```
+     mv containerd.service /etc/systemd/system/
+     ```
+     reload the daemon
+     ```
+     systemctl daemon-reload
+     ```
+     restart the containerd service
+     ```
+     systemctl restart containerd
+     ```
   8. 
