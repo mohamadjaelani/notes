@@ -67,5 +67,24 @@
      ```
      verify the file by this command ```cat /etc/sysctl.d/99-kubernetes-cri.conf```
      then apply the ```sysctl``` file using command ```sysctl -p /etc/sysctl.d/99-kubernetes-cri.conf```
-  9. install ```runc```
+  9. install ```runc``` by download the file using command
+      ```
+      wget https://github.com/opencontainers/runc/releases/download/v1.1.9/runc.amd64
+      ```
+      install using command
+     ```
+     install -m 755 runc.amd64 /usr/local/sbin/runc
+     ```
+  10. install ```crictl``` by download the file using command
+      ```
+      wget https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.28.0/crictl-v1.28.0-linux-amd64.tar.gz
+      ```
+      extract the compressed file
+      ```
+      tar -zxvf crictl-v1.28.0-linux-amd64.tar.gz
+      ```
+      then install it
+      ```
+      install -m 755 crictl /usr/local/bin/crictl
+      ```
      
