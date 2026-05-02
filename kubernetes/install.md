@@ -129,4 +129,33 @@
 
 ## Only Master
   install kubernetes for Master
-  
+  ```
+  vi kubeadm-config.yaml
+
+  apiVersion: kubeadm.k8s.io/v1beta3
+  kind: InitConfiguration
+  localAPIEndpoint:
+    advertiseAddress: "192.168.1.20"
+    bindPort: 6443
+  nodeRegistration:
+    criSocket: unix:///run/containerd/containerd.sock
+    taint:
+      - efffect: PreferNoSchedule
+        key: node-role.kubernetes.io/master
+  ---
+  apiVersion: kubeadm.k8s.io/v1beta3
+  kind: ClusterConfiguration
+  kubernetesVersion: 1.28.1
+  networking:
+    podSubnet: "192.168.0.0/16"
+    serviceSubnet: "192.168.0.0/12"
+  apiServer:
+    extraArgs:
+      authorization-mode: "Node,RBAC"
+    timeoutForControlPlane: 4m0s
+  ---
+  apiVersion: kubelet.config.k8s.io/v1beta1
+  kind: KubeletConfiguration
+  cgroupDriver: systemd
+  failSwapOn: false
+  ```
