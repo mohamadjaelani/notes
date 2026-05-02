@@ -95,4 +95,14 @@
       ```
       crictl --runtime-endpoint=unix:///run/containerd/containerd.sock version
       ```
-    ----- continue to page 26----
+  11. Add kubernetes repository
+      download signing public key for kubernetes respository and instal gpg keyrings
+      ```
+      curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+      ```
+      add kubernetes repo to ubuntu repo
+      ```
+      cho 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.28/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+      ```
+      do update ```apt-get update``` just to make sure repo has kubernetes repos working fine.
+      
