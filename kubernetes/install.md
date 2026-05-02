@@ -105,4 +105,24 @@
       cho 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.28/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
       ```
       do update ```apt-get update``` just to make sure repo has kubernetes repos working fine.
-      
+  12. Install kubelet, kubadm and kubectl
+      check version
+      ```
+      apt-cache policy kubeadm
+      ```
+      then install kubeadm
+      ```
+      apt install -y kubeadm=1.28.15-1.1
+      ```
+      then hold update for kubelet, kubeadm and kubectl
+      ```
+      apt-mark hold kubelet kubeadm kubectl
+      ```
+      activate kubelet, to automatically running after system boot
+      ```
+      systemctl enable --now kubelet
+      ```
+      check version
+      ```
+      kubectl version --client --output=yaml && kubeadm version --output=yaml
+      ```
