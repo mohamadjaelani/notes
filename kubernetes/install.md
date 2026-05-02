@@ -126,3 +126,7 @@
       ```
       kubectl version --client --output=yaml && kubeadm version --output=yaml
       ```
+
+## Only Master
+  install kubernetes for Master
+  
