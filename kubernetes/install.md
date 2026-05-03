@@ -204,7 +204,7 @@
   ```
   if you forget to copy it, then you can get join token by running below command
   ```
-  sudo kubeadm token create --print-join-command
+  kubeadm token create --print-join-command
   ```
   then execute join token in worker node
 ## that's it
