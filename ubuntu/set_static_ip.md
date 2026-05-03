@@ -1,6 +1,6 @@
 ## set static ip for ubuntu
 1. show ip details ```ip r```
-2. edit file vi /etc/netplan/00xxx.yaml and edit the file put value based on your config
+2. edit file ```vi /etc/netplan/file_netplan_xxx.yaml``` and edit the file put value based on your config
    ```
    network:
     version: 2
