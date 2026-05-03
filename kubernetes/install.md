@@ -52,13 +52,11 @@
      generate configuration file in the containerd directory
      ```
      containerd config default | tee /etc/containerd/config.toml
-     sudo sed -i 's/SystemdCgroup = false/SystemdCgroup = true/g' /etc/containerd/config.toml
+     
      ```
-
      ```
-     vi /etc/containerd/config.toml
+     sed -i 's/SystemdCgroup = false/SystemdCgroup = true/g' /etc/containerd/config.toml
      ```
-     ~~find text ```system``` by ```/system``` then change ```systemd_cgroup=true``` save it using ```:wq```~~
      finally install ```containerd.service``` by downloading the file using
      ```
      wget https://raw.githubusercontent.com/containerd/containerd/main/containerd.service
@@ -79,7 +77,7 @@
      ```
      systemctl enable containerd
      ```
-  11. set IP Forwarding by creating configuration file using this command
+  7. set IP Forwarding by creating configuration file using this command
      ```
      tee /etc/sysctl.d/99-kubernetes-cri.conf << EOF
      > net.bridge.bridge-nf-call-ip6tables=1
