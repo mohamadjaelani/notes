@@ -158,7 +158,11 @@
       ```
 
 ## Only Master
-  install kubernetes for Master can use below config
+  install kubernetes for Master
+  ```
+  kubeadm init
+  ```
+  or using below config
   ```
   vi kubeadm-config.yaml
 
@@ -189,10 +193,7 @@
   cgroupDriver: systemd
   failSwapOn: false
   ```
-  or just use
-  ```
-  kubeadm init
-  ```
+  
   if you found error use this command
   ```
   kubeadm reset cleanup-node
