@@ -80,14 +80,20 @@
   7. set IP Forwarding by creating configuration file using this command
      ```
      tee /etc/sysctl.d/99-kubernetes-cri.conf << EOF
-     > net.bridge.bridge-nf-call-ip6tables=1
-     > net.bridge.bridge-nf-call-iptables=1
-     > net.ipv4.ip_forward=1
-     > EOF
+     net.bridge.bridge-nf-call-ip6tables=1
+     net.bridge.bridge-nf-call-iptables=1
+     net.ipv4.ip_forward=1
+     EOF
      ```
-     verify the file by this command ```cat /etc/sysctl.d/99-kubernetes-cri.conf```
-     then apply the ```sysctl``` file using command ```sysctl -p /etc/sysctl.d/99-kubernetes-cri.conf```
-  12. install ```runc``` by download the file using command
+     verify the file by this command
+     ```
+     cat /etc/sysctl.d/99-kubernetes-cri.conf
+     ```
+     then apply the ```sysctl``` file using command
+     ```
+     sysctl -p /etc/sysctl.d/99-kubernetes-cri.conf
+     ```
+  8. install ```runc``` by download the file using command
       ```
       wget https://github.com/opencontainers/runc/releases/download/v1.1.9/runc.amd64
       ```
@@ -95,7 +101,7 @@
      ```
      install -m 755 runc.amd64 /usr/local/sbin/runc
      ```
-  13. install ```crictl``` by download the file using command
+  9. install ```crictl``` by download the file using command
       ```
       wget https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.28.0/crictl-v1.28.0-linux-amd64.tar.gz
       ```
@@ -115,17 +121,21 @@
       ```
       crictl --runtime-endpoint=unix:///run/containerd/containerd.sock version
       ```
-  14. Add kubernetes repository
+  10. Add kubernetes repository
       download signing public key for kubernetes respository and instal gpg keyrings
+      create directory
+      ```
+      sudo mkdir -p -m 755 /etc/apt/keyrings
+      ```
       ```
       curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
       ```
       add kubernetes repo to ubuntu repo
       ```
-      cho 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.28/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+      echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.28/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
       ```
       do update ```apt-get update``` just to make sure repo has kubernetes repos working fine.
-  15. Install kubelet, kubadm and kubectl
+  12. Install kubelet, kubadm and kubectl
       check version
       ```
       apt-cache policy kubeadm
@@ -148,7 +158,7 @@
       ```
 
 ## Only Master
-  install kubernetes for Master
+  install kubernetes for Master can use below config
   ```
   vi kubeadm-config.yaml
 
@@ -179,9 +189,21 @@
   cgroupDriver: systemd
   failSwapOn: false
   ```
-if ```kubeadm init``` error use this command
-```kubeadm reset cleanup-node```
-then run ```kubeadm init``` again
-
-
-kubeadm join 192.168.1.23:6443 --token g2jump.kww06e695f6mbb1c --discovery-token-ca-cert-hash sha256:567216c5e582c27cfc515ed27e0e1887ca45ccf6b6a74dac829369b1a1471f5e 
+  or just use
+  ```
+  kubeadm init
+  ```
+  if you found error use this command
+  ```
+  kubeadm reset cleanup-node
+  ```
+  then run ```kubeadm init``` again. you'll get join token as below
+  ```
+  kubeadm join 192.168.1.23:6443 --token g2jump.kww06e695f6mbb1c --discovery-token-ca-cert-hash sha256:567216c5e582c27cfc515ed27e0e1887ca45ccf6b6a74dac829369b1a1471f5e 
+  ```
+  if you forget to copy it, then you can get join token by running below command
+  ```
+  sudo kubeadm token create --print-join-command
+  ```
+  then execute join token in worker node
+## that's it
