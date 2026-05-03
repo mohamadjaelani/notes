@@ -9,7 +9,7 @@
       ens33:
         dhcp4: false
         addresses:
-          - 192.168.1.20
+          - 192.168.1.20/24
         routes:
           - to: default
             via: 192.168.1.1
