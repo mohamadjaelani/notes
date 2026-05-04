@@ -1,5 +1,5 @@
 # the steps installing kubernetes in ubuntu
-## for master and 2 worker nodes (all command running in su and using termius)
+## for master and worker nodes (all command running in su and using termius)
   1. get the lattest update ```apt-get update```
   2. install ```apt-transport-https```, but 1stly check the latest version using this command ```apt-cache policy apt-transport-https``` then install using
      ```
