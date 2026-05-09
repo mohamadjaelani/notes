@@ -5,6 +5,10 @@
 ### eg
 ```scp -r Faizul_Klasifikasi_Rempah_8020/ famathain@103.103.21.66:/home/famathain/Faizul_Klasifikasi_Rempah_8020```
 ```scp *.* famathain@103.103.21.66:/home/famathain/nodeserver/public```
+### Download a single file
+```scp username@hostname:/path/to/remote/file /path/to/local/destination```
+### Download an entire directory
+```scp -r username@hostname:/path/to/remote/folder /path/to/local/destination```
 ### remote access
 ```ssh famathain@103.103.21.66```
 ### password: 
