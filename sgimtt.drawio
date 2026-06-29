@@ -213,10 +213,10 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="6dufPaoIS-2QFSzpm6ta-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="fieldname" vertex="1">
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" value="fieldname" vertex="1">
           <mxGeometry height="50" width="230" x="160" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="6dufPaoIS-2QFSzpm6ta-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="select data type" vertex="1">
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" value="select data type" vertex="1">
           <mxGeometry height="50" width="170" x="390" y="160" as="geometry" />
         </mxCell>
         <mxCell id="6dufPaoIS-2QFSzpm6ta-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="btn" vertex="1">
