@@ -213,17 +213,41 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="6dufPaoIS-2QFSzpm6ta-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" value="fieldname" vertex="1">
-          <mxGeometry height="50" width="230" x="160" y="160" as="geometry" />
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Add Field" vertex="1">
+          <mxGeometry height="30" width="70" x="160" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="6dufPaoIS-2QFSzpm6ta-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" value="select data type" vertex="1">
-          <mxGeometry height="50" width="170" x="390" y="160" as="geometry" />
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Remeove slected Field" vertex="1">
+          <mxGeometry height="30" width="100" x="240" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="6dufPaoIS-2QFSzpm6ta-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="btn" vertex="1">
-          <mxGeometry height="50" width="40" x="560" y="160" as="geometry" />
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="save" vertex="1">
+          <mxGeometry height="30" width="70" x="350" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="6dufPaoIS-2QFSzpm6ta-5" parent="1" style="triangle;whiteSpace=wrap;html=1;rotation=90;fillColor=#000000;" value="" vertex="1">
-          <mxGeometry height="20" width="15" x="572.5" y="190" as="geometry" />
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;align=left;" value="structure file name" vertex="1">
+          <mxGeometry height="30" width="150" x="160" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-11" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="50" width="440" x="160" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-1" parent="6dufPaoIS-2QFSzpm6ta-11" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" value="fieldname" vertex="1">
+          <mxGeometry height="50" width="230" as="geometry" />
+        </mxCell>
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-3" parent="6dufPaoIS-2QFSzpm6ta-11" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" value="select data type" vertex="1">
+          <mxGeometry height="50" width="170" x="230" as="geometry" />
+        </mxCell>
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-4" parent="6dufPaoIS-2QFSzpm6ta-11" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="btn" vertex="1">
+          <mxGeometry height="50" width="40" x="400" as="geometry" />
+        </mxCell>
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-5" parent="6dufPaoIS-2QFSzpm6ta-11" style="triangle;whiteSpace=wrap;html=1;rotation=90;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="20" width="15" x="412.5" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=left;" value="structure data type" vertex="1">
+          <mxGeometry height="30" width="150" x="350" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=left;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="500" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-14" parent="1" style="triangle;whiteSpace=wrap;html=1;rotation=90;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="20" width="15" x="507.5" y="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
