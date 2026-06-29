@@ -240,7 +240,7 @@
         <mxCell id="6dufPaoIS-2QFSzpm6ta-5" parent="6dufPaoIS-2QFSzpm6ta-11" style="triangle;whiteSpace=wrap;html=1;rotation=90;fillColor=#000000;" value="" vertex="1">
           <mxGeometry height="20" width="15" x="412.5" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="6dufPaoIS-2QFSzpm6ta-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=left;" value="structure data type" vertex="1">
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=left;" value="source type" vertex="1">
           <mxGeometry height="30" width="150" x="350" y="120" as="geometry" />
         </mxCell>
         <mxCell id="6dufPaoIS-2QFSzpm6ta-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=left;" value="" vertex="1">
@@ -248,6 +248,12 @@
         </mxCell>
         <mxCell id="6dufPaoIS-2QFSzpm6ta-14" parent="1" style="triangle;whiteSpace=wrap;html=1;rotation=90;fillColor=#000000;" value="" vertex="1">
           <mxGeometry height="20" width="15" x="507.5" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-15" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;source type&lt;/h1&gt;&lt;p&gt;1. JSON&lt;/p&gt;&lt;p&gt;2. XML&lt;/p&gt;&lt;p&gt;3. ISO8583&lt;/p&gt;&lt;p&gt;4. SOAP&lt;/p&gt;&lt;p&gt;5. CSV&lt;/p&gt;&lt;p&gt;6. Excel 360&lt;/p&gt;" vertex="1">
+          <mxGeometry height="210" width="260" x="160" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="6dufPaoIS-2QFSzpm6ta-16" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;data type&lt;/h1&gt;&lt;p&gt;1. str&lt;/p&gt;&lt;p&gt;2. int&lt;/p&gt;&lt;p&gt;3. dbl&lt;/p&gt;&lt;p&gt;4. float&lt;/p&gt;&lt;p&gt;5. date&lt;/p&gt;&lt;p&gt;6. bigdecimal&lt;/p&gt;&lt;p&gt;7. enum&lt;/p&gt;" vertex="1">
+          <mxGeometry height="230" width="260" x="360" y="280" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
