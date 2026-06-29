@@ -1,0 +1,331 @@
+mvn clean install
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-nb-calculator-service-sit-aws:2.0.0.RELEASE  . -f Dockerfile-sit
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-nb-calculator-service-sit-aws:2.0.0.RELEASE
+
+kubectl apply -f crl-nb-calculator-service-sit-aws-deployment.yaml
+
+
+-----------------------
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-letter-service-sit-aws:1.0.0.RELEASE  . -f Dockerfile-sit
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-letter-service-sit-aws:1.0.0.RELEASE
+
+kubectl apply -f crl-ellise-letter-service-sit-aws-deployment.yaml
+
+-----------------------------------
+cd D:\JOBS\CREDITELIFE\crl-kta-cover-service
+
+d:
+
+mvn clean install
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-kta-cover-service-sit-aws:2.0.0.RELEASE  . -f Dockerfile-sit
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-kta-cover-service-sit-aws:2.0.0.RELEASE
+
+kubectl apply -f crl-kta-cover-service-sit-aws-deployment.yaml
+
+
+-----------------------------------
+cd D:\JOBS\CREDITELIFE\crl-document-service
+
+d:
+
+mvn clean install
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-document-service-sit-aws:1.1.2.RELEASE  . -f Dockerfile-sit
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-document-service-sit-aws:1.1.2.RELEASE
+
+kubectl apply -f crl-document-service-sit-aws-deployment.yaml
+
+kubectl get pod
+
+
+-----------------------------------
+cd D:\JOBS\CREDITELIFE\crl-filenet-service
+
+d:
+
+mvn clean install
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-filenet-service-sit-aws:2.0.0.RELEASE  . -f Dockerfile-sit
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-filenet-service-sit-aws:2.0.0.RELEASE
+
+kubectl apply -f crl-filenet-service-sit-aws-deployment.yaml
+
+kubectl get pod
+
+-----------------------------------
+
+cd D:\JOBS\CREDITELIFE\crl-email-service
+
+d:
+
+mvn clean install
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-email-service-sit-aws:2.0.0.RELEASE  . -f Dockerfile-sit
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-email-service-sit-aws:2.0.0.RELEASE
+
+kubectl apply -f crl-email-service-sit-aws-deployment.yaml
+
+kubectl get pod
+
+-----------------------------crl-ellise-email-service 1.0-RELEASE------
+
+cd C:\Users\mohamadjaelani\Documents\CRL-14031-PROJECT\ELLISE\crl-ellise-email-service
+
+c:
+
+mvn clean install
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-email-service-sit-aws:1.0-RELEASE  . -f Dockerfile-sit
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-email-service-sit-aws:1.0-RELEASE
+
+kubectl apply -f crl-ellise-email-service-sit-aws-deployment.yaml
+
+kubectl get pod
+
+-----------------------------crl-letter-service-sit-aws:1.0.2.RELEASE------
+
+cd C:\Users\mohamadjaelani\Documents\CRL-14031-PROJECT\ELLISE\crl-letter-service
+
+c:
+
+mvn clean install
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-letter-service-sit-aws:1.0.2.RELEASE  . -f Dockerfile-sit
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-letter-service-sit-aws:1.0.2.RELEASE
+
+kubectl apply -f crl-letter-service-sit-aws-deployment.yaml
+
+kubectl get pod
+
+-----------------------------------
+
+-----------------------------crl-api-gateway-service-sit-aws:1.0.0.RELEASE------
+
+cd D:\JOBS\CREDITELIFE\crl-api-gateway-service
+
+d:
+
+mvn clean install
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-api-gateway-service-sit-aws:1.0.0.RELEASE . -f Dockerfile-sit
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-api-gateway-service-sit-aws:1.0.0.RELEASE
+
+kubectl apply -f crl-api-gateway-service-sit-aws-deployment.yaml
+
+kubectl get pod
+
+-----------------------------------
+-----------------------------------
+
+
+cd D:\JOBS\CREDITELIFE\crl-message-kafka-attunity-service
+
+d:
+
+mvn clean install
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-message-kafka-attunity-service-sit-aws:2.0.0.RELEASE  . -f Dockerfile-sit
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-message-kafka-attunity-service-sit-aws:2.0.0.RELEASE
+
+kubectl apply -f crl-message-kafka-attunity-service-sit-aws-deployment.yaml
+
+kubectl get pod
+
+-----------------------------------
+
+cd D:\JOBS\CREDITELIFE\crl-payment-status-service
+
+d:
+
+mvn clean install
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-payment-status-service-sit-aws:1.0.0.RELEASE  . -f Dockerfile-sit
+
+docker manifest inspect private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-payment-status-service-sit-aws:1.0.0.RELEASE
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-payment-status-service-sit-aws:1.0.0.RELEASE
+
+kubectl apply -f crl-payment-status-service-sit-aws-deployment.yaml
+
+kubectl get pod
+
+-----------------------------------
+
+cd C:\Users\mohamadjaelani\Documents\CRL-14031-PROJECT\SUPPORT\pathblast-031-service
+
+c:
+
+mvn clean install
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/pathblast-031-service-sit-aws:0.0.1-SNAPSHOT  . -f Dockerfile-sit
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/pathblast-031-service-sit-aws:0.0.1-SNAPSHOT
+
+kubectl apply -f pathblast-031-service-sit-aws-deployment.yaml
+
+kubectl get pod
+
+
+-- docker syntax
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/<env>/<project name>  . -f Dockerfile
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/<env>/<project name>
+
+-- docker syntax example
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-user-product-service-sit-aws:1.0.0.RELEASE  . -f Dockerfile
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-user-product-service-sit-aws:1.0.0.RELEASE
+Docker push public-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-user-product-service-sit-aws:1.0.0.RELEASE
+
+
+-- cek wether image is exist in repose
+docker manifest inspect private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-payment-status-service-sit-aws:1.0.0.RELEASE
+docker manifest inspect private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-letter-service-sit-aws:1.0.0.RELEASE
+
+------------demo argocd
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-demo-argocd  . -f Dockerfile
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-demo-argocd
+
+docker manifest inspect private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-demo-argocd
+
+
+kubectl apply -f pathblast-031-service-sit-aws-deployment.yaml
+
+kubectl get pod
+
+------------crl-letter-service
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-letter-service-sit-aws:1.0.2.RELEASE  . -f Dockerfile-sit
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-letter-service-sit-aws:1.0.2.RELEASE
+
+docker manifest inspect private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-demo-argocd
+
+
+kubectl apply -f pathblast-031-service-sit-aws-deployment.yaml
+
+kubectl get pod
+
+/------------------------------------------
+docker login -u ex.mohamad.jaelani private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-user-product-service-sit-aws:1.0.0.RELEASE  . -f Dockerfile
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-user-product-service-sit-aws:1.0.0.RELEASE
+
+
+docker login -u ex.mohamad.jaelani private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-gateway-service-sit-aws:1.0.0.RELEASE  . -f Dockerfile
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-gateway-service-sit-aws:1.0.0.RELEASE
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-gateway-service-sit-aws:1.0.1.RELEASE  . -f Dockerfile
+
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-ellise-gateway-service-sit-aws:1.0.1.RELEASE 
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-letter-service-sit-aws:1.1.5.RELEASE  . -f Dockerfile
+
+
+
+docker login -u ex.mohamad.jaelani private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/cisl-crl-adapter-sit-aws:2.0.0.RELEASE  . -f Dockerfile
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/cisl-crl-adapter-sit-aws:2.0.0.RELEASE
+
+
+docker build -t private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/cisl-crl-adapter-prod-aws:2.0.0.RELEASE  . -f Dockerfile
+Docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/cisl-crl-adapter-prod-aws:2.0.0.RELEASE
+/------------------------------------------
+
+
+
+docker image pull private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/sit/crl-message-kafka-attunity-service-sit-ocp:2.0.0.RELEASE@sha256:b6ff09e7f25e1e5ea4d1640522ceacc7fb17db827850bc26fb45245075e92797
+
+-- checks
+docker manifest inspect private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-newbusiness-service-prod-aws:1.0.RELEASE
+--- pull
+docker image pull private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-newbusiness-service-prod-aws:1.0.RELEASE
+docker image pull private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-letter-service-prod-aws:1.0.0.RELEASE
+docker image pull private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-letter-getter-service-prod-aws:1.0.RELEASE
+docker image pull private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-user-product-service-prod-aws:1.0.RELEASE
+docker image pull private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-email-service-prod-aws:1.0.RELEASE
+docker image pull private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-document-service-prod-aws:1.0.0.RELEASE
+docker image pull private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-calculator-service-prod-aws:1.0.0.RELEASE
+docker image pull private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-attunity-service-prod-aws:1.0.0.RELEASE
+docker image pull private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-eform-api-service-prod-aws:1.0.RELEASE
+
+
+-- taging
+docker tag e01091e42268 private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-newbusiness-service-prod-aws:07032025.deployment
+docker tag 4359f4d480a6 private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-letter-service-prod-aws:07032025.deployment
+docker tag 776ee0c338a2 private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-letter-getter-service-prod-aws:07032025.deployment
+docker tag b4cea9cdf45f private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-user-product-service-prod-aws:07032025.deployment
+docker tag ca6494811c4c private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-email-service-prod-aws:07032025.deployment
+docker tag 161a22e60862 private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-document-service-prod-aws:07032025.deployment
+docker tag 9cfdf8d9b3be private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-calculator-service-prod-aws:07032025.deployment
+docker tag d4fa380749b7 private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-ellise-attunity-service-prod-aws:07032025.deployment
+docker tag 8df497b80889 private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/crl-eform-api-service-prod-aws:07032025.deployment
+
+
+docker tag 53a08146a9ac private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/eclipse-temurin:25-jdk-ubi10-minimal
+
+public-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/eclipse-temurin:11-jre-alpine
+
+docker tag 24de726604f4 private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/openjdk:11.0.11-jre-slim
+
+docker push private-docker-registry.nexus02.cdp.prod.aws.allianz.co.id/crl/prod/openjdk:11.0.11-jre-slim
+
+-- request create triger (insert and update) for table azcl_member_details_kta
+
+insert ke table dengan field (reference_no, member_status, timestamp, status)
+
+28/11/2025  20:55             2.449 crl-api-gateway-service-ocp.yaml
+25/11/2025  09:38             2.399 crl-api-gateway-service.yaml
+25/11/2025  15:07             3.406 crl-document-service.yaml
+19/09/2025  21:27             1.853 crl-ellise-attunity-service.yaml
+28/11/2025  21:59             2.834 crl-ellise-calculator-service.yaml
+30/10/2025  09:15             2.819 crl-ellise-document-service.yaml
+21/11/2025  21:35             2.618 crl-ellise-email-service.yaml
+21/11/2025  21:34             2.915 crl-ellise-gateway-service.yaml
+21/11/2025  21:34             2.821 crl-ellise-letter-service.yaml
+28/11/2025  20:55             3.045 crl-ellise-newbusiness-service.yaml
+25/07/2025  21:49             2.400 crl-ellise-user-product-service.yaml
+25/11/2025  15:34             2.217 crl-email-service.yaml
+17/10/2025  22:17             2.505 crl-excel-csv-service.yaml
+25/11/2025  20:25             3.032 crl-filenet-service-aws.yaml
+28/11/2025  20:55             2.121 crl-filenet-service.yaml
+25/11/2025  20:34             3.191 crl-kta-cover-service-aws.yaml
+28/11/2025  20:55             2.048 crl-kta-cover-service.yaml
+25/11/2025  20:25             3.414 crl-letter-service-aws.yaml
+28/11/2025  20:55             2.908 crl-letter-service.yaml
+25/11/2025  20:50             2.733 crl-message-kafka-attunity-service-aws.yaml
+22/09/2025  23:07             1.865 crl-message-kafka-attunity-service.yaml
+25/11/2025  09:48             2.923 crl-nb-calculator-service.yaml
+21/11/2025  21:44             2.539 crl-payment-status-service-aws.yaml
+17/10/2025  20:50             2.169 crl-payment-status-service.yaml
+14/11/2025  21:40             2.267 crl-support-service.yaml
+25/11/2025  08:34             1.651 load_balancer_prod.yml
+25/11/2025  08:36             1.802 load_balancer_prod_internal.yml
+
+git rm --cached crl-document-service.yaml
+git rm --cached crl-email-service.yaml
+git rm --cached crl-filenet-service-aws.yaml
+git rm --cached crl-kta-cover-service-aws.yaml
+git rm --cached crl-letter-service-aws.yaml
+git rm --cached crl-message-kafka-attunity-service-aws.yaml
+git rm --cached crl-nb-calculator-service.yaml
+git rm --cached crl-document-service.yam
+git commit -m "Removed file from version control"
+
+
+
+
+
+
+
