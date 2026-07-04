@@ -209,7 +209,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="OxQvE0RVLRndXlPCtjpf" name="structure_page">
-    <mxGraphModel dx="760" dy="627" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1744" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -226,7 +226,7 @@
           <mxGeometry height="30" width="150" x="160" y="120" as="geometry" />
         </mxCell>
         <mxCell id="6dufPaoIS-2QFSzpm6ta-11" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="50" width="440" x="160" y="160" as="geometry" />
+          <mxGeometry height="57" width="548" x="160" y="181" as="geometry" />
         </mxCell>
         <mxCell id="6dufPaoIS-2QFSzpm6ta-1" parent="6dufPaoIS-2QFSzpm6ta-11" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" value="fieldname" vertex="1">
           <mxGeometry height="50" width="230" as="geometry" />
@@ -239,6 +239,15 @@
         </mxCell>
         <mxCell id="6dufPaoIS-2QFSzpm6ta-5" parent="6dufPaoIS-2QFSzpm6ta-11" style="triangle;whiteSpace=wrap;html=1;rotation=90;fillColor=#000000;" value="" vertex="1">
           <mxGeometry height="20" width="15" x="412.5" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="84M3GnwQdwKhXOOudi0T-7" connectable="0" parent="6dufPaoIS-2QFSzpm6ta-11" style="group" value="" vertex="1">
+          <mxGeometry height="19" width="598" x="-38" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="84M3GnwQdwKhXOOudi0T-8" parent="84M3GnwQdwKhXOOudi0T-7" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#3333FF;" value="" vertex="1">
+          <mxGeometry height="1" width="580" x="18" y="8.5" as="geometry" />
+        </mxCell>
+        <mxCell id="84M3GnwQdwKhXOOudi0T-9" parent="84M3GnwQdwKhXOOudi0T-7" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="+" vertex="1">
+          <mxGeometry height="18" width="18" as="geometry" />
         </mxCell>
         <mxCell id="6dufPaoIS-2QFSzpm6ta-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=left;" value="source type" vertex="1">
           <mxGeometry height="30" width="150" x="350" y="120" as="geometry" />
@@ -256,10 +265,22 @@
           <mxGeometry height="230" width="260" x="360" y="280" as="geometry" />
         </mxCell>
         <mxCell id="ik2nM5Uqjroa3ImCxqUh-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;" value="Details" vertex="1">
-          <mxGeometry height="50" width="120" x="600" y="160" as="geometry" />
+          <mxGeometry height="50" width="120" x="600" y="181" as="geometry" />
         </mxCell>
         <mxCell id="ik2nM5Uqjroa3ImCxqUh-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=15;" value="Details for &amp;lt;field_name&amp;gt;&amp;lt;data_type&amp;gt;:&lt;div&gt;1. Mandatory (unselected defaultly)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- specify error message if error occurs&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Case insensitve (selected defaultly)&lt;/div&gt;&lt;div&gt;3. length (min and max of fixed length) (no length defaultly)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- specify error message if error occurs&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="320" width="510" x="160" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="84M3GnwQdwKhXOOudi0T-5" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="18" width="598" x="122" y="171.5" as="geometry" />
+        </mxCell>
+        <mxCell id="84M3GnwQdwKhXOOudi0T-1" parent="84M3GnwQdwKhXOOudi0T-5" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#3333FF;" value="" vertex="1">
+          <mxGeometry height="1" width="580" x="18" y="8.5" as="geometry" />
+        </mxCell>
+        <mxCell id="84M3GnwQdwKhXOOudi0T-2" parent="84M3GnwQdwKhXOOudi0T-5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="+" vertex="1">
+          <mxGeometry height="18" width="18" as="geometry" />
+        </mxCell>
+        <mxCell id="84M3GnwQdwKhXOOudi0T-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="on mouse hover sign add at top currenct field or at below current field" vertex="1">
+          <mxGeometry height="60" width="120" x="-20" y="171.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
